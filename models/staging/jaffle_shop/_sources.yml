@@ -1,0 +1,20 @@
+sources:
+  - name: jaffle_shop
+    database: raw 
+    schema: jaffle_shop
+    description: >
+      Contains the raw ingested data
+      from our jaffle_shop operations.
+    tables:
+      - name: customer_web_activity
+      - name: orders
+      - name: order_items
+      - name: products
+      - name: supplies
+
+  - name: jaffle
+    database: raw
+    schema: jaffle_chats
+    tables:
+      - name: customers
+        identifier: chatusers
