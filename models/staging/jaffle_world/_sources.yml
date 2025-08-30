@@ -10,8 +10,8 @@ sources:
       - name: addresses
       - name: customers
       - name: employees
-      - name: orders
       - name: order_line_items
+      - name: orders
       - name: products
       - name: regions
       - name: stores

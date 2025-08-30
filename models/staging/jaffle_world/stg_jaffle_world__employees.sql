@@ -12,6 +12,7 @@ renamed as (
         region_id,
         firstname as first_name,
         lastname as last_name,
+        first_name || ' ' || last_name as full_name,
         role,
         email,
         phone,

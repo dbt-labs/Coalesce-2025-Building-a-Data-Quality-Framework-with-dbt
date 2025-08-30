@@ -10,7 +10,7 @@ renamed as (
         customer_id,
         employee_id,
         store_id,
-        order_ts as order_created_at,
+        order_ts as ordered_at,
         status,
         paymethod as payment_method,
         subtotal as order_subtotal,

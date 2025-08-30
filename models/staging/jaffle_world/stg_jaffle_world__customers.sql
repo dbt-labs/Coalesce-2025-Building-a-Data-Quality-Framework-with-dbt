@@ -10,6 +10,7 @@ renamed as (
         address_id,
         firstname as first_name,
         lastname as last_name,
+        first_name || ' ' || last_name as full_name,
         email,
         phone,
         created as created_at,

@@ -1,0 +1,25 @@
+models:
+- name: employee_sales
+  description: >
+    This model aggregates sales data by employee, providing insights into
+    the number of orders taken and the types of products sold by each employee. It
+    helps in understanding employee performance in terms of sales volume across different
+    product categories.
+  columns:
+    - name: employee
+      description: The name of the employee who took the orders.
+
+    - name: employee_email
+      description: The email address of the employee.
+
+    - name: total_orders_taken
+      description: The total number of distinct orders taken by the employee.
+
+    - name: jaffles_sold
+      description: The total quantity of jaffles sold by the employee.
+
+    - name: drinks_sold
+      description: The total quantity of drinks sold by the employee.
+      
+    - name: sides_sold
+      description: The total quantity of sides sold by the employee.
