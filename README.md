@@ -1,11 +1,10 @@
-Welcome to your new dbt project!
+### Welcome to the 2025 Data Quality Workshop!
+(Building a Data Quality Framework with dbt)
 
-### Using the starter project
-
+### Getting Started
 Try running the following commands:
-- dbt run
+- dbt build
 - dbt test
-
 
 ### Resources:
 - Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
