@@ -1,0 +1,39 @@
+models:
+  - name: stg_jaffle_world__orders
+    description: >
+      This model serves as a staging layer for order data from the Jaffle 
+      World source. It standardizes and renames fields for consistency and 
+      ease of use in downstream models.
+    columns:
+      - name: order_id
+        description: A unique identifier for each order.
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: customer_id
+        description: The identifier for the customer who placed the order.
+
+      - name: employee_id
+        description: The identifier for the employee who handled the order.
+
+      - name: store_id
+        description: The identifier for the store where the order was placed.
+
+      - name: order_created_at
+        description: The timestamp when the order was created.
+
+      - name: status
+        description: The current status of the order.
+
+      - name: payment_method
+        description: The method used to pay for the order.
+
+      - name: order_subtotal
+        description: The subtotal amount of the order before tax.
+
+      - name: tax
+        description: The tax amount applied to the order.
+
+      - name: order_total
+        description: The total amount of the order including tax.

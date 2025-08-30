@@ -1,0 +1,19 @@
+sources:
+  - name: jaffle_world
+    database: raw 
+    schema: jaffle_world
+    description: >
+      The sources for our ingested
+      Jaffle Shop data related to 
+      regional operations.
+    tables:
+      - name: addresses
+      - name: customers
+      - name: employees
+      - name: orders
+      - name: order_line_items
+      - name: products
+      - name: regions
+      - name: stores
+      - name: warehouses
+      - name: warehouse_supplies

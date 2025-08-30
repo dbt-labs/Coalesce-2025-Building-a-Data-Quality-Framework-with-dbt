@@ -1,0 +1,31 @@
+models:
+  - name: stg_jaffle_world__addresses
+    description: >
+      This model serves as a staging layer for address data 
+      sourced from the 'jaffle_world' dataset. It standardizes 
+      and renames columns to ensure consistency and readability 
+      for downstream processes.
+    columns:
+      - name: address_id
+        description: A unique identifier for each address.
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: street
+        description: The street name and number of the address.
+
+      - name: city
+        description: The city where the address is located.
+
+      - name: state
+        description: The state where the address is located.
+
+      - name: postal_code
+        description: The postal code for the address.
+
+      - name: country
+        description: The country where the address is located.
+
+      - name: created_at
+        description: The timestamp when the address record was created.

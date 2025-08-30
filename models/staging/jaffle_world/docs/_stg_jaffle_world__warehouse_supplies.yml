@@ -1,0 +1,23 @@
+models:
+  - name: stg_jaffle_world__warehouse_supplies
+    description: >
+      This model provides a staging layer for warehouse supplies data, 
+      including details about the quantity of products on hand and the 
+      last update information.
+    columns:
+      - name: warehouse_id
+        description: The unique identifier for the warehouse.
+
+      - name: product_id
+        description: The unique identifier for the product.
+
+      - name: quantity_on_hand
+        description: >
+          The current quantity of the product available in the warehouse.
+
+      - name: last_updated_at
+        description: >
+          The timestamp indicating when the record was last updated.
+          
+      - name: last_updated_by
+        description: The identifier of the user who last updated the record.

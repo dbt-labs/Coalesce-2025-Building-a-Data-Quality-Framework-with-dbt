@@ -16,7 +16,6 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-
 models:
   coalesce_data_quality_workshop_2025:
     marts:

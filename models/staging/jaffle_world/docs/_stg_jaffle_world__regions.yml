@@ -1,0 +1,19 @@
+models:
+  - name: stg_jaffle_world__regions
+    description: >
+      This model serves as a staging layer for region data, transforming 
+      and renaming fields from the source 'jaffle_world.regions' table 
+      to ensure consistency and clarity in downstream models.
+    columns:
+      - name: region_id
+        description: A unique identifier for each region.
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: regional_manager_id
+        description: >
+          The identifier for the manager responsible for the region.
+
+      - name: region_name
+        description: The name of the region.

@@ -1,0 +1,47 @@
+models:
+  - name: stg_jaffle_world__employees
+    description: >
+      This model provides a detailed view of employees, including 
+      their personal and employment details, to support HR and 
+      operational analysis.
+    columns:
+      - name: employee_id
+        description: A unique identifier for each employee.
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: store_id
+        description: >
+          The identifier for the store where the employee is assigned.
+
+      - name: warehouse_id
+        description: >
+          The identifier for the warehouse associated with the employee.
+
+      - name: region_id
+        description: >
+          The identifier for the region where the employee operates.
+
+      - name: first_name
+        description: >
+          The first name of the employee.
+
+      - name: last_name
+        description: The last name of the employee.
+
+      - name: role
+        description: The job role or position of the employee.
+
+      - name: email
+        description: The email address of the employee.
+
+      - name: phone
+        description: The phone number of the employee.
+
+      - name: hired_at
+        description: The timestamp when the employee was hired.
+
+      - name: terminated_at
+        description: >
+          The timestamp when the employee was terminated, if applicable.

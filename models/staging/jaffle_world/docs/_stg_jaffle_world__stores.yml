@@ -1,0 +1,30 @@
+models:
+  - name: stg_jaffle_world__stores
+    description: >
+      This model serves as a staging layer for store data from the 
+      'jaffle_world' source. It renames and formats store-related 
+      fields for consistency and downstream usage.
+    columns:
+      - name: store_id
+        description: A unique identifier for each store.
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: store_name
+        description: The name of the store.
+
+      - name: address_id
+        description: The identifier for the address associated with the store.
+
+      - name: region_id
+        description: The identifier for the region where the store is located.
+
+      - name: store_manager_id
+        description: The identifier for the manager responsible for the store.
+
+      - name: opened_at
+        description: The timestamp indicating when the store was opened.
+
+      - name: tax_rate
+        description: The tax rate applicable to the store.
