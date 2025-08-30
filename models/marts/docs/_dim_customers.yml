@@ -1,0 +1,48 @@
+models:
+- name: dim_customers
+  description: >
+    This model provides a comprehensive view of customer information by
+    selecting all fields from the internal customers table. It serves as a foundational
+    dataset for customer-related analytics and reporting.
+  columns:
+    - name: customer_id
+      description: A unique identifier for each customer.
+
+    - name: first_name
+      description: The first name of the customer.
+
+    - name: last_name
+      description: The last name of the customer.
+
+    - name: full_name
+      description: The full name of the customer, combining first and last names.
+
+    - name: email
+      description: The email address of the customer.
+
+    - name: phone
+      description: The phone number of the customer.
+
+    - name: created_at
+      description: The timestamp when the customer record was created.
+
+    - name: updated_at
+      description: The timestamp when the customer record was last updated.
+
+    - name: address_id
+      description: A unique identifier for the customer's address.
+
+    - name: street
+      description: The street address of the customer.
+
+    - name: city
+      description: The city where the customer resides.
+
+    - name: state
+      description: The state where the customer resides.
+
+    - name: zip
+      description: The postal code of the customer's address.
+      
+    - name: country
+      description: The country where the customer resides.

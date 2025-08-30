@@ -1,0 +1,37 @@
+models:
+  - name: stg_jaffle_world__order_line_items
+    description: > 
+      This model serves as a staging layer for order line items, 
+      renaming and reformatting columns from the source data to 
+      ensure consistency and clarity for downstream analysis.
+    columns:
+      - name: line_item_id
+        description: A unique identifier for each line item in an order.
+        data_tests:
+          - unique
+          - not_null
+          
+      - name: order_id
+        description: >
+          The identifier for the order to which this line item belongs.
+
+      - name: product_id
+        description: >
+          The identifier for the product associated with this line item.
+
+      - name: quantity
+        description: The number of units of the product in this line item.
+
+      - name: unit_price
+        description: The price per unit of the product in this line item.
+
+      - name: line_subtotal
+        description: >
+          The total price for the quantity of products in this line item, 
+          calculated as quantity multiplied by unit price.
+
+      - name: created_at
+        description: The timestamp when the line item was created.
+
+      - name: updated_at
+        description: The timestamp when the line item was last updated.

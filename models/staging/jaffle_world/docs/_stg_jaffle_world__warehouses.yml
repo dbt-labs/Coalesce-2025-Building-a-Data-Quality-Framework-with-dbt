@@ -1,0 +1,24 @@
+models:
+- name: stg_jaffle_world__warehouses
+  description: >
+    This model provides a refined view of warehouse data, including 
+    identifiers, location, and operational details, to support inventory 
+    and logistics analysis.
+  columns:
+  - name: warehouse_id
+    description: A unique identifier for each warehouse.
+    data_tests:
+      - unique
+      - not_null
+      
+  - name: address_id
+    description: The identifier for the address associated with the warehouse.
+
+  - name: region_id
+    description: The identifier for the region where the warehouse is located.
+  
+  - name: warehouse_name
+    description: The name of the warehouse.
+  
+  - name: opened_at
+    description: The timestamp indicating when the warehouse was opened.

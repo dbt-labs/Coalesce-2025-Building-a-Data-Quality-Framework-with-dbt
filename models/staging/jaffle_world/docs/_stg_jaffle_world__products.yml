@@ -1,0 +1,35 @@
+models:
+  - name: stg_jaffle_world__products
+    description: >
+      This model provides a refined view of the products data from the 
+      'jaffle_world' source, including product details such as SKU, 
+      name, category, pricing, and status. It is used to facilitate 
+      product-related analyses and reporting.
+    columns:
+      - name: product_id
+        description: A unique identifier for each product.
+        data_tests:
+          - unique 
+          - not_null 
+          
+      - name: sku
+        description: >
+          The stock keeping unit, a unique code for identifying the product.
+
+      - name: product_name
+        description: The name of the product.
+
+      - name: category
+        description: The category to which the product belongs.
+
+      - name: unit_price
+        description: The price per unit of the product.
+
+      - name: is_active
+        description: Indicates whether the product is currently active.
+
+      - name: created_at
+        description: The timestamp when the product was created.
+
+      - name: updated_at
+        description: The timestamp when the product was last updated.
