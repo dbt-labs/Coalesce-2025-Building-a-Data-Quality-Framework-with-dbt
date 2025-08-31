@@ -7,17 +7,16 @@ Starter YML is located at the bottom of this file. Use this to add a unit
 test to `models/staging/jaffle_world/docs/_stg_jaffle_world__customers.yml`:
 
 1. Copy/Paste the code to the last line of the file.
-2. Add the model name that we want to test (stg_jaffle_world__customers)
-3. Finish filling out the `input` configuration (hint: take a look at 
+2. Finish filling out the `input` configuration (hint: take a look at 
    models/staging/jaffle_world/stg_jaffle_world__customers.sql to see what
    source that model is using in the SQL)
-4. Using the description, fill out the `given` and `expect` row and column values.
-5. Run `dbt build -s stg_jaffle_world__customers`. What are the results of the unit test?
+3. Using the description, fill out the `given` and `expect` row and column values.
+4. Run `dbt build -s stg_jaffle_world__customers`. What are the results of the unit test?
 
 ```yml
 unit_tests:
   - name: test_is_valid_email_address
-    model: 
+    model: stg_jaffle_world__customers
     description: >
       Check that is_valid_email logic captures of our known edge cases:
       - emails that have a .com without domain, like nodomain@.com
