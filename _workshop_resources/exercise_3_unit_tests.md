@@ -1,8 +1,7 @@
 ### Exercise 3: Unit Tests
 `models/staging/jaffle_world/stg_jaffle_world__customers.sql` has a column 
 `is_valid_email` which uses regex to identify whether a customer’s email is 
-valid or not based on emails that have been seen in the data. The data type 
-returned is a `boolean`.
+valid or not. The data type returned is a `boolean`.
 
 Starter YML is located at the bottom of this file. Use this to add a unit
 test to `models/staging/jaffle_world/docs/_stg_jaffle_world__customers.yml`:
@@ -21,12 +20,12 @@ unit_tests:
     model: 
     description: >
       Check that is_valid_email logic captures of our known edge cases:
-      - emails that have a .com without domain like nodomain@.com
-      - emails that have a domain, but truncated like truncated@domain.c
+      - emails that have a .com without domain, like nodomain@.com
+      - emails that have a truncated domain address, like truncated@domain.c
       - emails that have a missing dot in the domain, like missingdot@domaincom
       - emails with no @, like noat.com
-      Additionally, we should check that we're not marking emails
-      with valid special characters as invalid, such as:
+      Additionally, we should check we're not marking emails which are valid 
+      that contain special characters, such as:
       - c+berger@jaffle-shop.com
       - d.horner@jaffle.com
     given:
