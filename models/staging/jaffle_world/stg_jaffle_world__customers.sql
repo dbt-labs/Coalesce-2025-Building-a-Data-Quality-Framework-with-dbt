@@ -12,6 +12,10 @@ renamed as (
         lastname as last_name,
         first_name || ' ' || last_name as full_name,
         email,
+        regexp_like(
+            email, 
+            '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$'
+        ) as is_valid_email,
         phone,
         created as created_at,
         updated as updated_at
