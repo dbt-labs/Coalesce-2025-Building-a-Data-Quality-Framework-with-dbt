@@ -8,6 +8,7 @@ customers as (
     select * from {{ ref('dim_customers') }}
 ),
 
+
 agg_customer_orders as (
     select
         customer_id,
