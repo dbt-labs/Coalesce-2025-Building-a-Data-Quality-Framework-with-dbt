@@ -9,7 +9,7 @@
 
     ```yml
       #  - name: is_valid_email
-      #    description: Boolen value showing whether an email is valid or not 
+      #    description: Boolean value showing whether an email is valid or not 
       #    data_type: boolean
     ```
 4. excute the command 'dbt build --select dim_customers' and note the failure calling out the missing column definition

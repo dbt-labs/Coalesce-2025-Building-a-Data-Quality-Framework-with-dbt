@@ -54,5 +54,5 @@ models:
       description: The country where the customer resides.
       data_type: varchar
     - name: is_valid_email
-      description: Boolen value showing whether an email is valid or not 
+      description: Boolean value showing whether an email is valid or not 
       data_type: boolean
