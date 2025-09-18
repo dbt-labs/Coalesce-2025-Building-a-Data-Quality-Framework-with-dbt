@@ -25,4 +25,4 @@ selection as (
 )
 
 select * 
-from customers
+from selection
