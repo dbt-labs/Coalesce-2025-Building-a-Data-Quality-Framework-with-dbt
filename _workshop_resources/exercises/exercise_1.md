@@ -7,6 +7,5 @@
 2. Test the model by running `dbt build -s customer_lifetime_values`. 
    What is the result?
 
-3. Try modifying `models/reports/customer_lifetime_values.sql` by 
-   adding `order_id,` to line 14 and modifying the grouping to `group by 1, 2`. 
-   Run your build command again. What is the result?
+3. Take a look at `models/reports/customer_lifetime_values.sql` to try and identify the issue
+   *TIP*: Something in the agg_customer_orders CTE is causting duplicate customer_id records
