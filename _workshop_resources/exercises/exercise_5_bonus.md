@@ -18,11 +18,12 @@
 
 6. Replace the code on lines 15-18 in 'models/staging/jaffle_world/stg_jaffle_world__customers.sql' with the below code:
 
-    '''sql
+    ```sql
     iff(regexp_like(
         email, 
         '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$'
     ) = true,'Valid', 'Invalid') as is_valid_email,
+    ```
 
 7. Execute 'dbt build --select +dim_customers' to run dim_customers and all upstream models (including the one we just changed)
    Note the error showing that we are attempting to use a text field instead of the defined boolean field
