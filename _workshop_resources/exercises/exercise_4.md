@@ -21,9 +21,14 @@
    line_position = trailing
    ```
 
-3. Reload your IDE via browser refresh or by clicking the ellipses in the
-   bottom right corner and clicking "Restart Studio". This will allow your 
-   session to pick up your new configuration file for linting.
+3. Set SQLFluff as your default linter:
+   a. Open any model, then click on the Code Quality tab.
+   b. Click the </> Config button.
+   c. Select SQLFluff from the popup and hit save.
+   d. Restart your IDE by refreshing your browser or clicking the 
+      ellipses menu in the bottom right corner choosing "Restart Studio".
+      This will allow your session to pick up your new configuration
+      for linting.
 
 4. Open the `models/staging/jaffle_world/stg_jaffle_world__customers.sql` 
    file and click the "Lint" button. What are the results?
