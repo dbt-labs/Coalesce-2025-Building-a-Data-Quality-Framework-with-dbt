@@ -11,17 +11,20 @@
     └── dbt_project.yml
    ```
 
-2. When first linting the `stg_jaffle_shop__custoemrs` model, it should return
+2. After adding your config file and changing your default linter, you should
+   have restarted dbt Studio for your configs to take effect.
+
+3. When first linting the `stg_jaffle_shop__custoemrs` model, it should return
    no linting errors.
 
-3. After changing the comma's `line_position` config to `leading`, the linting
+4. After changing the comma's `line_position` config to `leading`, the linting
    of `stg_jaffle_shop__customers` should return errors stating that leading
    commas were expected.
 
-4. Clicking "Fix" on `stg_jaffle_shop__customers` should change all trailing commas 
+5. Clicking "Fix" on `stg_jaffle_shop__customers` should change all trailing commas 
    to leading commas in the SQL.
 
-5. Adding the `capitalisation_policy` for keyowrds should result in uncapitalized keyword
+6. Adding the `capitalisation_policy` for keyowrds should result in uncapitalized keyword
    errors in `stg_jaffle_shop__customers`. Fixing these should change all lower-cased
    keywords to uppercase.
 
