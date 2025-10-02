@@ -6,6 +6,5 @@ products.product_name,
 sum(distinct order_items.quantity) as total_orders
 from products left join order_items on products.product_id = order_items.product_id
 group by 1, 2)
-
 select *
 from joined
