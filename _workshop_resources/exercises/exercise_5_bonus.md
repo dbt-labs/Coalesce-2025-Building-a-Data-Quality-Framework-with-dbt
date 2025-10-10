@@ -17,12 +17,13 @@
 5. Uncomment the column definition in `models/marts/docs/_dim_customers.yml`
 
 6. Replace the code on lines 15-18 in 'models/staging/jaffle_world/stg_jaffle_world__customers.sql' with the below code:
+Note: You will also need to comment out the unit test created earlier in `models/staging/jaffle_world/docs/_stg_jaffle_world__customers.yml`
 
     ```sql
-    iff(regexp_like(
+    ,iff(regexp_like(
         email, 
         '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$'
-    ) = true,'Valid', 'Invalid') as is_valid_email,
+    ) = true,'Valid', 'Invalid') as is_valid_email
     ```
 
 7. Execute 'dbt build --select +dim_customers' to run dim_customers and all upstream models (including the one we just changed)
