@@ -24,12 +24,19 @@ models:
 
     - name: order_subtotal
       description: The total amount for the order before taxes.
+      data_tests:
+        - generic_greater_than_zero
 
     - name: tax
       description: The tax amount applied to the order.
+      data_tests:
+        - generic_greater_than_zero
 
     - name: order_total
       description: The total amount for the order including taxes.
+      data_tests:
+        - generic_greater_than_zero
+        - generic_is_decimal
 
     - name: employee_id
       description: The identifier for the employee who processed the order.

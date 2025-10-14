@@ -28,20 +28,20 @@ unit_tests:
       - c+berger@jaffle-shop.com
       - d.horner@jaffle.com
     given:
-      - input: source('', '')
+      - input: source('jaffle_world', 'customers')
         rows:
-          - {email: }
-          - {email: }
-          - {email: }
-          - {email: }
-          - {email: }
-          - {email: }
+          - {email: nodomain@.com}
+          - {email: truncated@domain.c}
+          - {email: missingdot@domaincom}
+          - {email: noat.com}
+          - {email: c+berger@jaffle-shop.com}
+          - {email: d.horner@jaffle.com}
     expect:
       rows:
-        - {email: , is_valid_email: }
-        - {email: , is_valid_email: }
-        - {email: , is_valid_email: }
-        - {email: , is_valid_email: }
-        - {email: , is_valid_email: }
-        - {email: , is_valid_email: }
+        - {email: nodomain@.com, is_valid_email: false}
+        - {email: truncated@domain.c, is_valid_email: false}
+        - {email: missingdot@domaincom, is_valid_email: false}
+        - {email: noat.com, is_valid_email: false}
+        - {email: c+berger@jaffle-shop.com, is_valid_email: true}
+        - {email: d.horner@jaffle.com, is_valid_email: true}
 ```
