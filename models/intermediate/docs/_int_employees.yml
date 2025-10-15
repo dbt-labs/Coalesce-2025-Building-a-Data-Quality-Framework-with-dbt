@@ -1,50 +1,50 @@
 models:
-- name: int_employees
-  description: >
-    This model integrates employee data with store and warehouse information
-    to provide a comprehensive view of employee roles and locations. It adjusts roles
-    for store managers and categorizes employees into types such as store, warehouse,
-    corporate, and executive. The model also consolidates location identifiers and
-    names for employees based on their roles and associated locations.
-  columns:
-    - name: employee_id
-      description: A unique identifier for each employee.
+  - name: int_employees
+    description: >
+      This model integrates employee data with store and warehouse information
+      to provide a comprehensive view of employee roles and locations. It adjusts roles
+      for store managers and categorizes employees into types such as store, warehouse,
+      corporate, and executive. The model also consolidates location identifiers and
+      names for employees based on their roles and associated locations.
+    columns:
+      - name: employee_id
+        description: A unique identifier for each employee.
 
-    - name: first_name
-      description: The first name of the employee.
+      - name: first_name
+        description: The first name of the employee.
 
-    - name: last_name
-      description: The last name of the employee.
+      - name: last_name
+        description: The last name of the employee.
 
-    - name: full_name
-      description: The full name of the employee, combining first and last names.
+      - name: full_name
+        description: The full name of the employee, combining first and last names.
 
-    - name: email
-      description: The email address of the employee.
+      - name: email
+        description: The email address of the employee.
 
-    - name: phone
-      description: The phone number of the employee.
+      - name: phone
+        description: The phone number of the employee.
 
-    - name: hired_at
-      description: The timestamp when the employee was hired.
+      - name: hired_at
+        description: The timestamp when the employee was hired.
 
-    - name: terminated_at
-      description: The timestamp when the employee was terminated, if applicable.
+      - name: terminated_at
+        description: The timestamp when the employee was terminated, if applicable.
 
-    - name: role
-      description: The role of the employee, adjusted for store managers.
+      - name: role
+        description: The role of the employee, adjusted for store managers.
 
-    - name: employee_type
-      description: >
-        The category of the employee, such as store, warehouse, corporate,
-        or executive.
+      - name: employee_type
+        description: >
+          The category of the employee, such as store, warehouse, corporate,
+          or executive.
 
-    - name: location_ids
-      description: >
-        Identifiers for the locations associated with the employee, such
-        as store or warehouse IDs.
+      - name: location_ids
+        description: >
+          Identifiers for the locations associated with the employee, such
+          as store or warehouse IDs.
 
-    - name: location_names
-      description: >
-        Names of the locations associated with the employee, such as store
-        or warehouse names.
+      - name: location_names
+        description: >
+          Names of the locations associated with the employee, such as store
+          or warehouse names.
