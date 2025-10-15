@@ -15,8 +15,15 @@ renamed as (
         paymethod as payment_method,
         subtotal as order_subtotal,
         tax,
-        total as order_total
+        total
+            as 
+            order_total
     from source
-)
+)       
+
+
+
+
+
 
 select * from renamed

@@ -31,7 +31,7 @@ final as (
 
         case
             when agg_customer_orders.is_repeat_customer 
-            then 'returning'
+                then 'returning'
             else 'new'
         end as customer_type,
 
