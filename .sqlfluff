@@ -12,7 +12,6 @@
    [sqlfluff:layout:type:comma]
    spacing_before = touch
    line_position = trailing
-   comma = leading
 
    [sqlfluff:rules:capitalisation.keywords]
    capitalisation_policy = upper
