@@ -35,3 +35,10 @@ models:
       
     - name: latest_order_at
       description: The timestamp of the customer's most recent order.
+
+    - name: customer_order
+      description: unique and not null
+      data_tests:
+        - unique
+        - not_null
+        
