@@ -1,23 +1,23 @@
 models:
-- name: customer_churn_statuses
-  description: >
-    This model identifies the churn status of customers based on their
-    last order date. It categorizes customers into 'churned', 'at_risk', or 'active'
-    based on the number of days since their last order.
-  columns:
-    - name: customer_id
-      description: A unique identifier for each customer.
+  - name: customer_churn_statuses
+    description: >
+      This model identifies the churn status of customers based on their
+      last order date. It categorizes customers into 'churned', 'at_risk', or 'active'
+      based on the number of days since their last order.
+    columns:
+      - name: customer_id
+        description: A unique identifier for each customer.
 
-    - name: last_order_date
-      description: The date of the customer's most recent order.
+      - name: last_order_date
+        description: The date of the customer's most recent order.
 
-    - name: last_order_id
-      description: The unique identifier of the customer's most recent order.
+      - name: last_order_id
+        description: The unique identifier of the customer's most recent order.
 
-    - name: days_since_last_order
-      description: The number of days since the customer's last order.
+      - name: days_since_last_order
+        description: The number of days since the customer's last order.
 
-    - name: churn_status
-      description: >
-        The churn status of the customer, indicating whether they are 'churned',
-        'at_risk', or 'active'.
+      - name: churn_status
+        description: >
+          The churn status of the customer, indicating whether they are 'churned',
+          'at_risk', or 'active'.

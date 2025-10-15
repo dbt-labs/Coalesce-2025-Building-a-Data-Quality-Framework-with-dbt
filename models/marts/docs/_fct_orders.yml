@@ -1,62 +1,62 @@
 models:
-- name: fct_orders
-  description: >
-    This model filters and selects completed orders from the internal orders
-    table, providing a comprehensive view of finalized transactions. It is useful
-    for analyzing sales performance and customer purchasing behavior.
-  columns:
-    - name: order_id
-      description: A unique identifier for each order.
+  - name: fct_orders
+    description: >
+      This model filters and selects completed orders from the internal orders
+      table, providing a comprehensive view of finalized transactions. It is useful
+      for analyzing sales performance and customer purchasing behavior.
+    columns:
+      - name: order_id
+        description: A unique identifier for each order.
 
-    - name: customer_id
-      description: The identifier for the customer who placed the order.
+      - name: customer_id
+        description: The identifier for the customer who placed the order.
 
-    - name: ordered_at
-      description: The timestamp when the order was placed.
+      - name: ordered_at
+        description: The timestamp when the order was placed.
 
-    - name: status
-      description: >
-        The current status of the order, filtered to 'completed' in this
-        model.
+      - name: status
+        description: >
+          The current status of the order, filtered to 'completed' in this
+          model.
 
-    - name: payment_method
-      description: The method used for payment in the order.
+      - name: payment_method
+        description: The method used for payment in the order.
 
-    - name: order_subtotal
-      description: The total amount for the order before taxes.
+      - name: order_subtotal
+        description: The total amount for the order before taxes.
 
-    - name: tax
-      description: The tax amount applied to the order.
+      - name: tax
+        description: The tax amount applied to the order.
 
-    - name: order_total
-      description: The total amount for the order including taxes.
+      - name: order_total
+        description: The total amount for the order including taxes.
 
-    - name: employee_id
-      description: The identifier for the employee who processed the order.
+      - name: employee_id
+        description: The identifier for the employee who processed the order.
 
-    - name: employee
-      description: The name of the employee who processed the order.
+      - name: employee
+        description: The name of the employee who processed the order.
 
-    - name: employee_email
-      description: The email address of the employee who processed the order.
+      - name: employee_email
+        description: The email address of the employee who processed the order.
 
-    - name: store_id
-      description: The identifier for the store where the order was placed.
+      - name: store_id
+        description: The identifier for the store where the order was placed.
 
-    - name: store_name
-      description: The name of the store where the order was placed.
+      - name: store_name
+        description: The name of the store where the order was placed.
 
-    - name: store_manager
-      description: The name of the manager of the store where the order was placed.
+      - name: store_manager
+        description: The name of the manager of the store where the order was placed.
 
-    - name: store_manager_email
-      description: The email address of the store manager.
+      - name: store_manager_email
+        description: The email address of the store manager.
 
-    - name: region
-      description: The region where the store is located.
+      - name: region
+        description: The region where the store is located.
 
-    - name: regional_manager
-      description: The name of the regional manager responsible for the store.
-      
-    - name: regional_manager_email
-      description: The email address of the regional manager.
+      - name: regional_manager
+        description: The name of the regional manager responsible for the store.
+        
+      - name: regional_manager_email
+        description: The email address of the regional manager.
