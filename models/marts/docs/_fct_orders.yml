@@ -60,3 +60,10 @@ models:
         
       - name: regional_manager_email
         description: The email address of the regional manager.
+
+      - name: order_total
+        description: is decimal
+        data_tests:
+          - is_decimal
+
+      
