@@ -6,6 +6,7 @@
 
 2. Test the model by running `dbt build -s customer_lifetime_values`. 
    What is the result?
+Error for both non null and unique 
 
 3. Take a look at `models/reports/customer_lifetime_values.sql` to try and identify the issue
    *TIP*: Something in the agg_customer_orders CTE is causting duplicate customer_id records
