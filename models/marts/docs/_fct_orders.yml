@@ -32,6 +32,7 @@ models:
         description: The total amount for the order including taxes.
         data_tests:
           - generic_greater_than_zero
+          - type_test_decimal
 
       - name: employee_id
         description: The identifier for the employee who processed the order.
